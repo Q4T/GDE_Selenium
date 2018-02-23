@@ -1,0 +1,6 @@
+Remove "new" by making pages static - see the example on youtube https://www.youtube.com/watch?v=DO8KVe00kcU&t=694s
+Remove complexity by making functions from users perspective on pages.
+Remove all variables from tests use constants instead.
+Never allow tests to manage their own state
+Add Assertions for every action - see https://www.youtube.com/watch?v=DO8KVe00kcU&t=694s
+remove long names from packages

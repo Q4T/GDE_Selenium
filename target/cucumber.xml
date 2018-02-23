@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="67.223079">
+<testcase classname="User can purchase items" name="User purchases 2 items" time="30.181137">
+<system-out><![CDATA[Given the user user is logged into the site.................................passed
+When the user changes the size of an item...................................passed
+And adds it to their basket.................................................passed
+And adds another item to the basket.........................................passed
+Then the sizes and cost calculations are correct............................passed
+And the user can purchase the items.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User can purchase items" name="user can add a message to a purchased item" time="24.358975">
+<system-out><![CDATA[Given there is a product in the order hisory................................passed
+When the user adds a message to a particular product ordered................passed
+Then the message will appear under messages.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User can purchase items" name="Assertion fails causing screenshot" time="12.682967">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:95)&#13;&#10;&#9;at com.automationpractice.WEB_Tests.stepDefinitions.AssertionFail.a_screenshot_is_taken(AssertionFail.java:58)&#13;&#10;&#9;at ✽.Then a screenshot is taken(PurchaseItem.feature:25)&#13;&#10;"><![CDATA[Given there is an assertion fail............................................passed
+When the failure occurs.....................................................passed
+Then a screenshot is taken..................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at com.automationpractice.WEB_Tests.stepDefinitions.AssertionFail.a_screenshot_is_taken(AssertionFail.java:58)
+	at ✽.Then a screenshot is taken(PurchaseItem.feature:25)
+]]></failure>
+</testcase>
+</testsuite>
